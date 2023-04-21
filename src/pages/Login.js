@@ -1,4 +1,5 @@
 import React from 'react'
+import Open from '../components/Open'
 
 const Login = () => {
     return (
@@ -25,6 +26,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <Open/>
 
         </>
     )

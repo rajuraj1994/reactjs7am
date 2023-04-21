@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FaShoppingCart} from 'react-icons/fa';
 
 const Header = () => {
     return (
@@ -12,7 +13,7 @@ const Header = () => {
                         </Link>
 
                         <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><Link to="#" className="nav-link px-2 text-secondary">Home</Link></li>
+                            <li><Link to="/" className="nav-link px-2 text-white">Home</Link></li>
                             <li><Link to="#" className="nav-link px-2 text-white">Features</Link></li>
                             <li><Link to="#" className="nav-link px-2 text-white">Pricing</Link></li>
                             <li><Link to="#" className="nav-link px-2 text-white">FAQs</Link></li>
@@ -24,8 +25,12 @@ const Header = () => {
                         </form>
 
                         <div className="text-end">
-                            <button type="button" className="btn btn-outline-light me-2">Login</button>
-                            <button type="button" className="btn btn-warning">Sign-up</button>
+                            <Link to='/login' className="btn btn-outline-light me-2">Login</Link>
+                            <Link to='/register' className="btn btn-warning">Sign-up</Link>
+                            <Link to='/cart' className='btn btn-success ms-2'>
+                                <FaShoppingCart style={{fontSize:'20px'}}/>
+                            </Link>
+                           
                         </div>
                     </div>
                 </div>
